@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { env } from "@/env";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Button className="my-5" variant="secondary">
         Click
       </Button>
+      {env.NODE_ENV}
     </main>
   );
 }
